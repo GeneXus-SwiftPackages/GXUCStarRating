@@ -16,13 +16,13 @@ let package = Package(
 		.target(name: "GXUCStarRatingWrapper",
 				dependencies: [
 					"GXUCStarRating",
-					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS, .tvOS]))
+					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.tvOS, .iOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXUCStarRating",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXUCStarRating-1.0.0-beta+20230309092859.xcframework.zip",
-			checksum: "bfc2f9f01f6873e7f9a576fabb8c35049b9fcbc20f6aedab91e2c79b7f4c8f00"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXUCStarRating-1.0.0-beta+20230309100338.xcframework.zip",
+			checksum: "25b429f1b7879e465e6aee671edff9bf58f98615820e641f18c96413320c7bf3"
 		)
 	]
 )
