@@ -10,7 +10,7 @@ let package = Package(
 			targets: ["GXUCStarRatingWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.5.0-beta.24")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.5.0-beta.25")
 	],
 	targets: [
 		.target(name: "GXUCStarRatingWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXUCStarRating",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXUCStarRating-1.5.0-beta.24.xcframework.zip",
-			checksum: "a54e63a1d215ef568e86be20eac852a3b89a970bc7fbafdbf822947b26db10a9"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXUCStarRating-1.5.0-beta.25.xcframework.zip",
+			checksum: "1fbc57843da3455e44205abc82d091b7e1c78d81782f47da231e0d97c4d49e41"
 		)
 	]
 )
