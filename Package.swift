@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.9
 import PackageDescription
 
 let package = Package(
@@ -10,7 +10,7 @@ let package = Package(
 			targets: ["GXUCStarRatingWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.6.0-beta.2")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.6.0-beta.3")
 	],
 	targets: [
 		.target(name: "GXUCStarRatingWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXUCStarRating",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXUCStarRating-1.6.0-beta.2.xcframework.zip",
-			checksum: "ddb106cfd19e6350eb9c5d21bb7c4c72e5748199493ee30c5277d1794f5d875c"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXUCStarRating-1.6.0-beta.3.xcframework.zip",
+			checksum: "99299a837e38c158d8175cb715fbeee029df2b9a7870ff9618afb39a68c76de6"
 		)
 	]
 )
