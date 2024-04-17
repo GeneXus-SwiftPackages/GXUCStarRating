@@ -1,28 +1,28 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.9
 import PackageDescription
 
 let package = Package(
 	name: "GXUCStarRating",
-	platforms: [.iOS("12.0"), .tvOS("12.0")],
+	platforms: [.iOS("12.0"), .tvOS("12.0"), .visionOS("1.0")],
 	products: [
 		.library(
 			name: "GXUCStarRating",
 			targets: ["GXUCStarRatingWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "2.0.0-beta.5")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "2.0.0-beta.6")
 	],
 	targets: [
 		.target(name: "GXUCStarRatingWrapper",
 				dependencies: [
 					"GXUCStarRating",
-					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS, .tvOS]))
+					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS, .tvOS, .visionOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXUCStarRating",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXUCStarRating-2.0.0-beta.5.xcframework.zip",
-			checksum: "ef2e6f5831c2e913bf075f2e35577213f1db7468ec2c511c604f2ec5ccaa6a9b"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXUCStarRating-2.0.0-beta.6.xcframework.zip",
+			checksum: "4fe5aec5b7c209cbf04b2cf5be1f91faf24db687b4aca21e399571b29925225d"
 		)
 	]
 )
