@@ -3,14 +3,14 @@ import PackageDescription
 
 let package = Package(
 	name: "GXUCStarRating",
-	platforms: [.iOS("12.0"), .tvOS("12.0"), .visionOS("1.0")],
+	platforms: [.iOS("13.0"), .tvOS("13.0"), .visionOS("1.0")],
 	products: [
 		.library(
 			name: "GXUCStarRating",
 			targets: ["GXUCStarRatingWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "2.2.0-beta.21")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "2.2.0-beta.24")
 	],
 	targets: [
 		.target(name: "GXUCStarRatingWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXUCStarRating",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXUCStarRating-2.2.0-beta.21.xcframework.zip",
-			checksum: "3fc502cb5a5aaccbad19cb8742098ce52f3bc1f09d3c4c6afd6a1e80847ef842"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXUCStarRating-2.2.0-beta.24.xcframework.zip",
+			checksum: "d8e074dea9446f3b87a00515144c4ee3de9eb19892b742146e016397737e8378"
 		)
 	]
 )
